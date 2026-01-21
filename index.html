@@ -153,6 +153,14 @@
         border: 1px solid var(--line);
         border-radius: 16px;
         padding: 18px;
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+
+      .card:hover,
+      .card:focus-within {
+        transform: translateY(-3px);
+        border-color: rgba(29, 79, 163, 0.25);
+        box-shadow: 0 10px 24px rgba(29, 79, 163, 0.1);
       }
 
       .principle-card {
@@ -164,6 +172,20 @@
         transform: translateY(-4px);
         border-color: rgba(29, 79, 163, 0.35);
         box-shadow: 0 14px 28px rgba(29, 79, 163, 0.12);
+      }
+
+      #anchor-events .card {
+        transition: none;
+        transform: none;
+        box-shadow: none;
+        border-color: var(--line);
+      }
+
+      #anchor-events .card:hover,
+      #anchor-events .card:focus-within {
+        transform: none;
+        box-shadow: none;
+        border-color: var(--line);
       }
 
       .list {
@@ -431,6 +453,59 @@
               <li>Community and student-focused initiatives</li>
             </ul>
           </div>
+          <div class="card">
+            <h3>Political Sphere</h3>
+            <ul class="list">
+              <li>Governor’s Office</li>
+              <li>Mayor’s Office</li>
+              <li>State and city agencies supporting innovation</li>
+              <li>Legislative leaders and policy partners</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="anchor-events">
+        <h2>2026 Anchor Events in Chicago</h2>
+        <div class="grid two">
+          <div class="card">
+            <ul class="list">
+              <li>
+                <a href="https://worldquantumday.org">World Quantum Day</a> — April 14
+              </li>
+              <li>
+                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July (TBD)
+              </li>
+              <li>
+                <a href="https://globalaffairs.org/global-quantum-forum">Global Quantum Forum</a>
+                — July (TBD)
+              </li>
+              <li>
+                <a href="https://www.adaptivequantumcircuits.com">Adaptive Quantum Circuits</a>
+                — October/November
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list">
+              <li>
+                <a href="https://quantumdeveloperday.com">Quantum Developer Day</a>
+                — November 1 (estimated)
+              </li>
+              <li>
+                <a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page">
+                  Chicago Quantum Summit
+                </a>
+                — November 2–4 (estimated)
+              </li>
+              <li>
+                <a href="https://sc26.supercomputing.org">Super Compute 26</a> — November 15–20
+              </li>
+              <li>
+                <a href="https://q2b.qcware.com">Q2B</a> — December 8–10
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -491,52 +566,8 @@
               <li>Capture lessons learned and ecosystem growth</li>
               <li>Signal continuity beyond 2026</li>
             </ul>
-            <p><strong>Format:</strong> Evening reception or half-day forum.</p>
+            <p><strong>Proposed format:</strong> Evening reception or half-day forum.</p>
             <p><strong>Timing considerations:</strong> Align with December conferences or Q2B.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="anchor-events">
-        <h2>2026 Anchor Events in Chicago</h2>
-        <div class="grid two">
-          <div class="card">
-            <ul class="list">
-              <li>
-                <a href="https://worldquantumday.org">World Quantum Day</a> — April 14
-              </li>
-              <li>
-                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July (TBD)
-              </li>
-              <li>
-                <a href="https://globalaffairs.org/global-quantum-forum">Global Quantum Forum</a>
-                — July (TBD)
-              </li>
-              <li>
-                <a href="https://www.adaptivequantumcircuits.com">Adaptive Quantum Circuits</a>
-                — October/November
-              </li>
-            </ul>
-          </div>
-          <div class="card">
-            <ul class="list">
-              <li>
-                <a href="https://quantumdeveloperday.com">Quantum Developer Day</a>
-                — November 1 (estimated)
-              </li>
-              <li>
-                <a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page">
-                  Chicago Quantum Summit
-                </a>
-                — November 2–4 (estimated)
-              </li>
-              <li>
-                <a href="https://sc26.supercomputing.org">Super Compute 26</a> — November 15–20
-              </li>
-              <li>
-                <a href="https://q2b.qcware.com">Q2B</a> — December 8–10
-              </li>
-            </ul>
           </div>
         </div>
       </section>
