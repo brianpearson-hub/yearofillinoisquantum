@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026: Year of Chicago Quantum</title>
+    <meta
+      name="description"
+      content="A community-led narrative to align, amplify, and celebrate Chicago's quantum momentum in 2026."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --blue: #1d4fa3;
+        --light-blue: #86c5f4;
+        --red: #e34234;
+        --white: #ffffff;
+        --ink: #0f172a;
+        --muted: #5b6473;
+        --line: #e6e9ef;
+        --card: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--white);
+        line-height: 1.6;
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        padding: 32px 0 24px;
+        border-bottom: 1px solid var(--line);
+        position: relative;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .brand {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 220px;
+      }
+
+      .brand-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 20px;
+      }
+
+      .logo {
+        width: min(520px, 90vw);
+        height: auto;
+        display: block;
+      }
+
+      .logo-absolute {
+        position: absolute;
+        top: 8px;
+        right: 48px;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 3vw, 3rem);
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: clamp(1.4rem, 2vw, 2rem);
+        margin: 0 0 8px;
+        letter-spacing: -0.01em;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        margin: 0 0 8px;
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+
+
+      .accent {
+        color: var(--blue);
+      }
+
+      main {
+        padding: 36px 0 72px;
+      }
+
+      section {
+        padding: 24px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      section:last-child {
+        border-bottom: 0;
+      }
+
+      #participate-success,
+      #cta {
+        border-bottom: 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      .grid.two {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .grid.three {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px;
+      }
+
+      .principle-card {
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+
+      .principle-card:hover,
+      .principle-card:focus-within {
+        transform: translateY(-4px);
+        border-color: rgba(29, 79, 163, 0.35);
+        box-shadow: 0 14px 28px rgba(29, 79, 163, 0.12);
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .list li {
+        margin: 6px 0;
+      }
+
+      .list a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      .list a:hover,
+      .list a:focus {
+        text-decoration: underline;
+      }
+
+      .event {
+        border-left: 4px solid var(--light-blue);
+        padding-left: 16px;
+      }
+
+      .event strong {
+        color: var(--ink);
+      }
+
+      .cta {
+        border: 1px solid rgba(29, 79, 163, 0.2);
+        background: linear-gradient(135deg, #f6f9ff, #ffffff);
+        border-radius: 20px;
+        padding: 32px;
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        border-bottom: 0;
+        box-shadow: 0 18px 40px rgba(29, 79, 163, 0.16);
+      }
+
+      .cta:hover,
+      .cta:focus-within {
+        transform: translateY(-2px);
+        border-color: rgba(29, 79, 163, 0.45);
+        box-shadow: 0 22px 45px rgba(29, 79, 163, 0.2);
+      }
+
+      footer {
+        padding: 32px 0 48px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .flag {
+        display: inline-flex;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .flag span {
+        display: block;
+        width: 32px;
+        height: 6px;
+        border-radius: 999px;
+      }
+
+      .flag .blue {
+        background: var(--blue);
+      }
+
+      .flag .light-blue {
+        background: var(--light-blue);
+      }
+
+      .flag .red {
+        background: var(--red);
+      }
+
+      .flag .white {
+        background: var(--white);
+        border: 1px solid var(--line);
+      }
+
+      @media (min-width: 900px) {
+        .topbar {
+          flex-wrap: nowrap;
+        }
+
+        .hero {
+          padding-right: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo logo-absolute"
+        src="photos/ycq.png"
+        alt="Year of Chicago Quantum logo"
+      />
+      <div class="wrap topbar">
+        <div class="brand"></div>
+      </div>
+      <div class="wrap hero">
+        <div>
+          <h1>2026: Year of Chicago Quantum</h1>
+          <p>
+            A community-led narrative to align, amplify, and celebrate Chicago’s
+            quantum momentum.
+          </p>
+          <div class="flag" aria-hidden="true">
+            <span class="blue"></span>
+            <span class="light-blue"></span>
+            <span class="red"></span>
+            <span class="white"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          <strong>2026 is shaping up to be a defining year for quantum in Chicago.</strong>
+          With global attention on the city driven by technological advances,
+          investment, major conferences, and international companies establishing
+          a presence here, 2026 presents a unique opportunity to build on the
+          momentum created by our quantum community.
+        </p>
+        <p>
+          Across research, startups, enterprise adoption, workforce development,
+          and global convening, an unprecedented concentration of quantum
+          activity is coincidentally taking place in the city. The Year of
+          Chicago Quantum is a community-led narrative designed to align,
+          amplify, and celebrate this momentum under a shared banner.
+        </p>
+        <p>
+          This is not a new organization, conference, or governing body. It is a
+          unifying story that reflects what is already happening and gives the
+          ecosystem a common language to tell it together.
+        </p>
+      </section>
+
+      <section id="why-chicago">
+        <h2>Why Chicago</h2>
+        <p>Chicago has quietly become one of the most complete quantum ecosystems in the world.</p>
+        <div class="grid two">
+          <div class="card">
+            <h3>The city uniquely combines</h3>
+            <ul class="list">
+              <li>World-class academic and national lab research</li>
+              <li>A growing base of quantum startups</li>
+              <li>International quantum companies planting flags</li>
+              <li>Strong enterprise and cloud participation</li>
+              <li>Public-private investment and infrastructure</li>
+              <li>A dense calendar of global quantum conferences</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>2026 convergence</h3>
+            <p>
+              In 2026, these forces converge in a way that is difficult to ignore
+              and difficult to replicate elsewhere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="purpose">
+        <h2>Purpose</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>The Year of Chicago Quantum exists to</h3>
+            <ul class="list">
+              <li>Align the ecosystem around a shared narrative</li>
+              <li>Increase global visibility for Chicago-based quantum work</li>
+              <li>Maintain momentum from the International Year of Quantum in 2025</li>
+              <li>Connect industry, academia, government, and investors</li>
+              <li>Attract talent, capital, and partnerships to the region</li>
+              <li>Create continuity across conferences and initiatives</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What it is</h3>
+            <ul class="list">
+              <li>A lightweight, open brand and shared language</li>
+              <li>A coordination layer across events and stakeholders</li>
+              <li>
+                A signal to the global community that Chicago is a place where
+                quantum is built, tested, and deployed
+              </li>
+            </ul>
+            <h3>What it is not</h3>
+            <ul class="list">
+              <li>A single company initiative</li>
+              <li>A replacement for existing organizations or events</li>
+              <li>A centralized authority or membership program</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles">
+        <h2>Core Principles</h2>
+        <div class="grid three">
+          <div class="card principle-card">Neutral and non-competitive</div>
+          <div class="card principle-card">Amplifies existing efforts rather than replacing them</div>
+          <div class="card principle-card">Low-friction participation</div>
+          <div class="card principle-card">Focused on long-term ecosystem impact</div>
+        </div>
+      </section>
+
+      <section id="ecosystem">
+        <h2>Ecosystem Participants and Stakeholders</h2>
+        <p>
+          The Year of Chicago Quantum is shaped by participation across the full
+          ecosystem, including but not limited to the following groups.
+        </p>
+        <div class="grid two">
+          <div class="card">
+            <h3>Ecosystem and Convening Anchors</h3>
+            <ul class="list">
+              <li><a href="https://chicagoquantum.org/">Chicago Quantum Exchange</a></li>
+              <li><a href="https://p33chicago.com/">P33 Chicago</a></li>
+              <li><a href="https://iqmp.org/">Illinois Quantum and Microelectronics Park</a></li>
+              <li><a href="https://mhubchicago.com/">mHUB</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Academic and Research Institutions</h3>
+            <ul class="list">
+              <li>University of Chicago</li>
+              <li>Northwestern University</li>
+              <li>Argonne National Laboratory</li>
+              <li>Fermi National Accelerator Laboratory</li>
+              <li>Additional Illinois-based universities and research centers</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Startups and Builders</h3>
+            <ul class="list">
+              <li>Chicago-founded quantum startups</li>
+              <li>Quantum software, hardware, and systems companies expanding into Chicago</li>
+              <li>Early-stage teams relocating or establishing a presence in the region</li>
+              <li>Spinouts and translational research ventures</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Industry and Enterprise Partners</h3>
+            <ul class="list">
+              <li>Cloud and infrastructure providers</li>
+              <li>Enterprise end users exploring pilots and adoption</li>
+              <li>Consulting and systems integration partners</li>
+              <li>Corporate innovation and venture teams</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Public Sector and Workforce</h3>
+            <ul class="list">
+              <li>City and state economic development organizations</li>
+              <li>Workforce training and education programs</li>
+              <li>Community and student-focused initiatives</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="events">
+        <h2>Proposed Events</h2>
+        <div class="grid two">
+          <div class="card event">
+            <h3>Year of Chicago Quantum Kickoff</h3>
+            <p><strong>Timing:</strong> February or March 2026</p>
+            <p>
+              A community kickoff event to formally open the Year of Chicago Quantum and
+              align stakeholders at the start of the year.
+            </p>
+            <h3>Objectives</h3>
+            <ul class="list">
+              <li>Set the shared narrative and goals for the year</li>
+              <li>Highlight ongoing initiatives already underway</li>
+              <li>Connect leaders across academia, industry, startups, and government</li>
+              <li>Announce the full 2026 event calendar</li>
+            </ul>
+            <h3>Proposed format</h3>
+            <ul class="list">
+              <li>Half-day or evening program</li>
+              <li>Short keynote remarks from ecosystem anchors</li>
+              <li>Lightning talks from startups, labs, and enterprise partners</li>
+              <li>Networking reception</li>
+            </ul>
+            <p><strong>Potential hosts/venues:</strong> University campus or national lab, mHUB, downtown venue.</p>
+          </div>
+          <div class="card event">
+            <h3>Quantum Qoffee’s</h3>
+            <p><strong>Cadence:</strong> Monthly, March–December 2026</p>
+            <p>
+              Build consistent community engagement, strengthen connections, and
+              maintain momentum between major conferences and events.
+            </p>
+            <h3>Objectives</h3>
+            <ul class="list">
+              <li>Open networking</li>
+              <li>One short spotlight talk or fireside chat</li>
+              <li>Optional lightning updates from the community</li>
+            </ul>
+            <p>
+              <strong>Rotating hosts:</strong> Universities, innovation hubs, and
+              partner spaces, with conference-adjacent sessions when stakeholders are in town.
+            </p>
+          </div>
+          <div class="card event">
+            <h3>Year of Chicago Quantum Closing Event</h3>
+            <p><strong>Timing:</strong> December 2026</p>
+            <p>
+              A capstone gathering to reflect on the year, share outcomes, and set momentum for what comes next.
+            </p>
+            <h3>Objectives</h3>
+            <ul class="list">
+              <li>Celebrate community achievements and collaborations</li>
+              <li>Highlight research, pilots, and commercial progress</li>
+              <li>Capture lessons learned and ecosystem growth</li>
+              <li>Signal continuity beyond 2026</li>
+            </ul>
+            <p><strong>Format:</strong> Evening reception or half-day forum.</p>
+            <p><strong>Timing considerations:</strong> Align with December conferences or Q2B.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="anchor-events">
+        <h2>2026 Anchor Events in Chicago</h2>
+        <div class="grid two">
+          <div class="card">
+            <ul class="list">
+              <li>
+                <a href="https://worldquantumday.org">World Quantum Day</a> — April 14
+              </li>
+              <li>
+                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July (TBD)
+              </li>
+              <li>
+                <a href="https://globalaffairs.org/global-quantum-forum">Global Quantum Forum</a>
+                — July (TBD)
+              </li>
+              <li>
+                <a href="https://www.adaptivequantumcircuits.com">Adaptive Quantum Circuits</a>
+                — October/November
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list">
+              <li>
+                <a href="https://quantumdeveloperday.com">Quantum Developer Day</a>
+                — November 1 (estimated)
+              </li>
+              <li>
+                <a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page">
+                  Chicago Quantum Summit
+                </a>
+                — November 2–4 (estimated)
+              </li>
+              <li>
+                <a href="https://sc26.supercomputing.org">Super Compute 26</a> — November 15–20
+              </li>
+              <li>
+                <a href="https://q2b.qcware.com">Q2B</a> — December 8–10
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="participate-success">
+        <div class="grid two">
+          <div>
+            <h2>How Partners Participate</h2>
+            <ul class="list">
+              <li>Use Year of Chicago Quantum language in event materials</li>
+              <li>Use #YearofChicagoQuantum or #YCQ in social posts</li>
+              <li>Co-brand select slides, programs, or side events</li>
+              <li>Cross-promote through newsletters and social channels</li>
+              <li>Sponsor meetups, dinners, or ecosystem gatherings</li>
+              <li>Collaborate on workforce, pilots, or research initiatives</li>
+            </ul>
+          </div>
+          <div>
+            <h2>What Success Looks Like</h2>
+            <ul class="list">
+              <li>Consistent use of the Year of Chicago Quantum narrative</li>
+              <li>Increased global attendance at Chicago-based events</li>
+              <li>Stronger cross-organization collaboration</li>
+              <li>More enterprise pilots and startup visibility</li>
+              <li>Chicago recognized as a long-term quantum hub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="cta">
+        <h2>Call to Action</h2>
+        <p>
+          If you are building, researching, investing, teaching, or deploying
+          quantum technologies in or with Chicago, we invite you to participate
+          in shaping the Year of Chicago Quantum.
+        </p>
+        <p class="accent">
+          Let’s align the story, amplify the work, and show the world what is
+          happening here together.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>&copy; 2026 Year of Chicago Quantum</p>
+      </div>
+    </footer>
+  </body>
+</html>
