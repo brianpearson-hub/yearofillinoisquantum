@@ -158,6 +158,10 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
 
+      .grid.ecosystem {
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+      }
+
       #events .grid.two {
         grid-template-columns: repeat(2, minmax(260px, 1fr));
       }
@@ -176,6 +180,10 @@
 
       .card-wide {
         grid-column: 1 / -1;
+      }
+
+      .card-span-two {
+        grid-column: span 2;
       }
 
       .card-image {
@@ -331,6 +339,14 @@
           width: min(440px, 95vw);
         }
 
+        .grid.ecosystem {
+          grid-template-columns: 1fr;
+        }
+
+        .card-span-two {
+          grid-column: auto;
+        }
+
         #events .grid.two {
           grid-template-columns: 1fr;
         }
@@ -397,7 +413,7 @@
       <section id="why-midwest">
         <h2>Why Illinois</h2>
         <p>Illinois has quietly become one of the most complete quantum ecosystems in the world.</p>
-        <div class="grid two">
+        <div class="grid ecosystem">
           <div class="card">
             <h3>Illinois brings together</h3>
             <ul class="list">
@@ -409,7 +425,7 @@
               <li>A dense calendar of global quantum conferences</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card card-span-two">
             <img
               class="card-image"
               src="photos/iqmp.jpg"
@@ -421,28 +437,20 @@
 
       <section id="purpose">
         <h2>Purpose</h2>
-        <div class="grid two">
-          <div class="card">
-            <h3>The Year of Illinois Quantum exists to</h3>
+        <div class="card">
+          <h3>The Year of Illinois Quantum exists to</h3>
+          <div class="grid three">
             <ul class="list">
               <li>Align the ecosystem around a shared narrative</li>
               <li>Increase global visibility for Illinois-based quantum work</li>
-              <li>Maintain momentum from the International Year of Quantum in 2025</li>
+              <li>Perpetuate the International Year of Quantum</li>
+            </ul>
+            <ul class="list">
               <li>Connect industry, academia, government, and investors</li>
               <li>Attract talent, capital, and partnerships to the region</li>
               <li>Create continuity across conferences and initiatives</li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section id="principles">
-        <h2>Core Principles</h2>
-        <div class="grid three">
-          <div class="card principle-card">Collaborative and non-competitive</div>
-          <div class="card principle-card">Amplifies existing efforts rather than replacing them</div>
-          <div class="card principle-card">Low-friction participation</div>
-          <div class="card principle-card">Focused on long-term ecosystem impact</div>
         </div>
       </section>
 
@@ -464,27 +472,28 @@
               <li><a href="https://mhubchicago.com/">mHUB</a></li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card card-span-two">
             <h3>Academic Institutions</h3>
-            <ul class="list">
-              <li>University of Chicago</li>
-              <li>Northwestern University</li>
-              <li>Argonne National Laboratory</li>
-              <li>Fermi National Accelerator Laboratory</li>
-              <li>UIUC</li>
-              <li>Purdue University</li>
-              <li>UW-Madison</li>
-              <li>Purdue NW</li>
-              <li>Illinois Universities</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Startups and Builders</h3>
-            <ul class="list">
-              <li>Illinois-founded quantum startups</li>
-              <li>Quantum software, hardware, and systems companies expanding into Illinois</li>
-              <li>Early-stage teams relocating or establishing a presence in the region</li>
-            </ul>
+            <div class="grid two">
+              <ul class="list">
+                <li>University of Chicago</li>
+                <li>Northwestern University</li>
+                <li>Argonne National Laboratory</li>
+                <li>Fermi National Accelerator Laboratory</li>
+                <li>UIUC</li>
+                <li>Purdue University</li>
+                <li>UW-Madison</li>
+              </ul>
+              <ul class="list">
+                <li>Illinois Universities</li>
+                <li>Purdue NW</li>
+                <li>Chicago State University</li>
+                <li>City Colleges of Chicago</li>
+                <li>Harper College</li>
+                <li>University of Illinois Chicago</li>
+                <li>Chicago area high schools</li>
+              </ul>
+            </div>
           </div>
           <div class="card">
             <h3>Industry and Enterprise Partners</h3>
@@ -498,17 +507,18 @@
           <div class="card">
             <h3>Public Sector and Workforce</h3>
             <ul class="list">
+              <li>Governor's Office</li>
               <li>State economic development organizations</li>
               <li>Workforce training and education programs</li>
               <li>Community and student-focused initiatives</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Political Sphere</h3>
+            <h3>Startups and Builders</h3>
             <ul class="list">
-              <li>Governor’s Office</li>
-              <li>State agencies supporting innovation</li>
-              <li>Legislative leaders and policy partners</li>
+              <li>Illinois-founded quantum startups</li>
+              <li>Quantum software, hardware, and systems companies expanding into Illinois</li>
+              <li>Early-stage teams relocating or establishing a presence in the region</li>
             </ul>
           </div>
         </div>
@@ -696,7 +706,7 @@
               partner spaces, with conference-adjacent sessions when stakeholders are in town.
             </p>
           </div>
-          <div class="card">
+          <div class="card card-wide">
             <h3>Propose an Event</h3>
             <p>
               Have an idea for a workshop, meetup, or community program? Submit your
