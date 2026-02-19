@@ -353,6 +353,27 @@
           grid-template-columns: 1fr;
         }
       }
+
+      .logo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+      }
+
+      .logo-grid img {
+        height: 48px;
+        width: auto;
+        max-width: 140px;
+        object-fit: contain;
+        opacity: 0.9;
+      }
+
+      .logo-grid img:hover {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -412,12 +433,12 @@
           <div class="card">
             <h3>Illinois brings together</h3>
             <ul class="list">
-              <li>World-class academic and national lab research</li>
-              <li>Public-private investments and infrastructure</li>
-              <li>A growing base of quantum startups</li>
-              <li>International quantum companies planting flags</li>
-              <li>Strong enterprise and cloud participation</li>
-              <li>A dense calendar of global quantum conferences</li>
+              <li>World class research</li>
+              <li>Investment and infrastructure</li>
+              <li>Expanding startup ecosystem</li>
+              <li>Global company presence</li>
+              <li>Enterprise and cloud engagement</li>
+              <li>Major international conferences</li>
             </ul>
           </div>
           <div class="card card-span-two">
@@ -517,6 +538,74 @@
             </ul>
           </div>
         </div>
+        <div class="logo-grid">
+          <a href="https://uchicago.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/uchicago.svg" alt="University of Chicago" />
+          </a>
+          <a href="https://chicagoquantum.org" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/cqe.png" alt="Chicago Quantum Exchange" />
+          </a>
+          <a href="https://p33chicago.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/p33.svg" alt="P33" />
+          </a>
+          <a href="https://mhubchicago.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/mhub.png" alt="mHUB" />
+          </a>
+          <a href="https://www.illinoisedc.org" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/illinoisedc.svg" alt="Illinois EDC" />
+          </a>
+          <a href="https://anl.gov" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/argonne.png" alt="Argonne National Laboratory" />
+          </a>
+          <a href="https://iqmp.org" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/iqmp.png" alt="Illinois Quantum and Microelectronics Park" />
+          </a>
+          <a href="https://polsky.uchicago.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/polsky.png" alt="Polsky Center" />
+          </a>
+          <a href="https://fnal.gov" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/fermilab.svg" alt="Fermi National Accelerator Laboratory" />
+          </a>
+          <a href="https://northwestern.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/northwestern.svg" alt="Northwestern University" />
+          </a>
+          <a href="https://illinois.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/uiuc.svg" alt="University of Illinois Urbana-Champaign" />
+          </a>
+          <a href="https://uic.edu" target="_blank" rel="noopener noreferrer">
+            <img src="https://brand.uic.edu/wp-content/uploads/sites/1116/2025/03/CAMP.CIRC600x365.png" alt="University of Illinois Chicago" />
+          </a>
+          <a href="https://memq.tech" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/memq.svg" alt="memQ" />
+          </a>
+          <a href="https://qbraid.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://qbraid-static.s3.amazonaws.com/lab-docs/logos-full/qbraid.png" alt="qBraid" />
+          </a>
+          <a href="https://infleqtion.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/infleqtion.png" alt="Infleqtion" />
+          </a>
+          <a href="https://eeroq.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/eeroq.png" alt="EeroQ" />
+          </a>
+          <a href="https://photonqueue.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/photonqueue.png" alt="PhotonQueue" />
+          </a>
+          <a href="https://stac12.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/stac12.png" alt="staC12" />
+          </a>
+          <a href="https://k1semiconductor.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/k1semiconductor.png" alt="K1 Semiconductor" />
+          </a>
+          <a href="https://quantcad.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/quantcad.png" alt="QuantCAD" />
+          </a>
+          <a href="https://glcrystal.com" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/glcrystal.jpg" alt="Great Lakes Crystal Technologies" />
+          </a>
+          <a href="https://quantopticon.co.uk" target="_blank" rel="noopener noreferrer">
+            <img src="https://logo.clearbit.com/quantopticon.co.uk" alt="Quantopticon" />
+          </a>
+        </div>
       </section>
 
       <section id="anchor-events">
@@ -531,10 +620,10 @@
                 <a href="https://quantum.northwestern.edu/events/">
                   Northwestern University Quantum Week
                 </a>
-                — April 20 to April 24
+                — April 20–24
               </li>
               <li>
-                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July (TBD)
+                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July 20–26
               </li>
               <li>
                 <a href="https://globalaffairs.org/global-quantum-forum">Global Quantum Forum</a>
@@ -550,19 +639,19 @@
             <ul class="list">
               <li>
                 <a href="https://quantumdeveloperday.com">Quantum Developer Day</a>
-                — November 1 (2025 dates)
+                — TBD
               </li>
               <li>
                 <a href="https://chicagoquantum.org/event/2025-chicago-quantum-recruiting-forum">
                   Chicago Quantum Recruiting Forum / ChiQHack
                 </a>
-                — November 1 (estimated)
+                — TBD
               </li>
               <li>
                 <a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page">
                   Chicago Quantum Summit
                 </a>
-                — November 2–4 (2025 dates)
+                — TBD
               </li>
               <li>
                 <a href="https://sc26.supercomputing.org">Super Compute 26</a> — November 15–20
@@ -575,7 +664,7 @@
         </div>
         <div class="card card-wide">
           <p>
-            For recurring quantum events, please refer to the
+            For updated quantum events, please refer to the
             <a href="https://chicagoquantum.org/upcoming-events">
               Chicago Quantum Exchange calendar
             </a>.
@@ -686,7 +775,7 @@
             <ul class="list">
               <li>Provide a hands-on quantum challenge for university students</li>
               <li>Facilitate networking between students and prospective employers in quantum</li>
-              <li>Align with Chicago Quantum Recruiting Forum / ChiQHack to connect talent with opportunities</li>
+              <li>Align with Chicago Quantum Recruiting Forum to connect talent with opportunities</li>
             </ul>
             <h3>Proposed format</h3>
             <ul class="list">
@@ -706,7 +795,7 @@
               <li>Capture lessons learned and ecosystem growth</li>
             </ul>
             <p><strong>Proposed format:</strong> Evening reception or half-day forum.</p>
-            <p><strong>Timing considerations:</strong> Align with December conferences or Q2B.</p>
+            <p><strong>Timing considerations:</strong> Align with Global Quantum Forum 2027.</p>
           </div>
           <div class="card event">
             <h3>Quantum Qoffee’s</h3>
@@ -726,7 +815,7 @@
               partner spaces, with conference-adjacent sessions when stakeholders are in town.
             </p>
           </div>
-          <div class="card card-wide">
+          <div class="card event">
             <h3>Propose an Event</h3>
             <p>
               Have an idea for a workshop, meetup, or community program? Submit your
