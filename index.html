@@ -390,6 +390,11 @@
         mix-blend-mode: multiply;
       }
 
+      .logo-grid img.logo-outline {
+        filter: drop-shadow(0 0 1px rgba(91, 99, 115, 0.5))
+                drop-shadow(0 0 2px rgba(91, 99, 115, 0.3));
+      }
+
       .event-list {
         display: flex;
         flex-direction: column;
@@ -602,7 +607,7 @@
             <img src="photos/logos/argonne.png" alt="Argonne National Laboratory" />
           </a>
           <a href="https://iqmp.org" target="_blank" rel="noopener noreferrer">
-            <img src="photos/logos/iqmp.png" alt="Illinois Quantum and Microelectronics Park" />
+            <img src="photos/logos/iqmp.png" alt="Illinois Quantum and Microelectronics Park" class="logo-outline" />
           </a>
           <a href="https://qbraid.com" target="_blank" rel="noopener noreferrer">
             <img src="photos/logos/qBraidlogo-black.png" alt="qBraid" />
