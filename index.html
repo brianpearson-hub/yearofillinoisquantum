@@ -378,6 +378,32 @@
       .logo-grid img.logo-no-bg {
         mix-blend-mode: multiply;
       }
+
+      .event-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .event-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .event-row strong {
+        min-width: 180px;
+      }
+
+      .event-row .audience {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
     </style>
   </head>
   <body>
@@ -543,8 +569,8 @@
           </div>
         </div>
         <div class="logo-grid">
-          <a href="https://uchicago.edu" target="_blank" rel="noopener noreferrer">
-            <img src="photos/logos/uchicago.svg" alt="University of Chicago" />
+          <a href="https://polsky.uchicago.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/polsky.png" alt="Polsky Center" />
           </a>
           <a href="https://chicagoquantum.org" target="_blank" rel="noopener noreferrer">
             <img src="photos/logos/cqe.png" alt="Chicago Quantum Exchange" />
@@ -567,8 +593,11 @@
           <a href="https://qbraid.com" target="_blank" rel="noopener noreferrer">
             <img src="photos/logos/qBraidlogo-black.png" alt="qBraid" />
           </a>
-          <a href="https://polsky.uchicago.edu" target="_blank" rel="noopener noreferrer">
-            <img src="photos/logos/polsky.png" alt="Polsky Center" />
+          <a href="https://memq.tech" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/memq.jpeg" alt="memQ" class="logo-no-bg" />
+          </a>
+          <a href="https://uchicago.edu" target="_blank" rel="noopener noreferrer">
+            <img src="photos/logos/uchicago.svg" alt="University of Chicago" />
           </a>
           <a href="https://fnal.gov" target="_blank" rel="noopener noreferrer">
             <img src="photos/logos/fermilab.svg" alt="Fermi National Accelerator Laboratory" />
@@ -581,9 +610,6 @@
           </a>
           <a href="https://uic.edu" target="_blank" rel="noopener noreferrer">
             <img src="https://brand.uic.edu/wp-content/uploads/sites/1116/2025/03/CAMP.CIRC600x365.png" alt="University of Illinois Chicago" />
-          </a>
-          <a href="https://memq.tech" target="_blank" rel="noopener noreferrer">
-            <img src="photos/logos/memq.jpeg" alt="memQ" class="logo-no-bg" />
           </a>
           <a href="https://infleqtion.com" target="_blank" rel="noopener noreferrer">
             <img src="photos/logos/infleqtion.png" alt="Infleqtion" />
@@ -611,56 +637,59 @@
 
       <section id="anchor-events">
         <h2>2026 Anchor Events in Illinois</h2>
-        <div class="grid two">
-          <div class="card">
-            <ul class="list">
-              <li>
-                <a href="https://worldquantumday.org">World Quantum Day</a> — April 14
-              </li>
-              <li>
-                <a href="https://quantum.northwestern.edu/events/">
-                  Northwestern University Quantum Week
-                </a>
-                — April 20–24
-              </li>
-              <li>
-                <a href="https://gotechchicago.com/week">TechChicago Week</a> — July 20–26
-              </li>
-              <li>
-                <a href="https://globalaffairs.org/global-quantum-forum">Global Quantum Forum</a>
-                — July 22–23
-              </li>
-              <li>
-                <a href="https://www.adaptivequantumcircuits.com">Adaptive Quantum Circuits</a>
-                — October/November
-              </li>
-            </ul>
+        <p class="muted" style="margin-bottom: 1.5rem;">
+          Events listed chronologically with intended audiences.
+        </p>
+        <div class="event-list">
+          <div class="card event-row">
+            <strong><a href="https://worldquantumday.org" target="_blank" rel="noopener noreferrer">World Quantum Day</a></strong>
+            <span>April 14</span>
+            <span class="audience">general public, enthusiasts, educators</span>
           </div>
-          <div class="card">
-            <ul class="list">
-              <li>
-                <a href="https://quantumdeveloperday.com">Quantum Developer Day</a>
-                — TBD
-              </li>
-              <li>
-                <a href="https://chicagoquantum.org/event/2025-chicago-quantum-recruiting-forum">
-                  Chicago Quantum Recruiting Forum / ChiQHack
-                </a>
-                — TBD
-              </li>
-              <li>
-                <a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page">
-                  Chicago Quantum Summit
-                </a>
-                — TBD
-              </li>
-              <li>
-                <a href="https://sc26.supercomputing.org">Super Compute 26</a> — November 15–20
-              </li>
-              <li>
-                <a href="https://q2b.qcware.com">Q2B</a> — December 8–10
-              </li>
-            </ul>
+          <div class="card event-row">
+            <strong><a href="https://quantum.northwestern.edu/events/" target="_blank" rel="noopener noreferrer">Northwestern University Quantum Week</a></strong>
+            <span>April 20–24</span>
+            <span class="audience">academia, students, researchers</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://gotechchicago.com/week" target="_blank" rel="noopener noreferrer">TechChicago Week</a></strong>
+            <span>July 20–26</span>
+            <span class="audience">tech enthusiasts, VCs, founders</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://globalaffairs.org/global-quantum-forum" target="_blank" rel="noopener noreferrer">Global Quantum Forum</a></strong>
+            <span>July 22–23</span>
+            <span class="audience">ecosystem leaders, public sector, enterprises</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://www.adaptivequantumcircuits.com" target="_blank" rel="noopener noreferrer">Adaptive Quantum Circuits</a></strong>
+            <span>October 26–28</span>
+            <span class="audience">academics, researchers, engineers</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://quantumdeveloperday.com" target="_blank" rel="noopener noreferrer">Quantum Developer Day</a></strong>
+            <span>TBD</span>
+            <span class="audience">developers, researchers, enterprise technologists</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://chicagoquantum.org/event/2025-chicago-quantum-recruiting-forum" target="_blank" rel="noopener noreferrer">Chicago Quantum Recruiting Forum / ChiQHack</a></strong>
+            <span>TBD</span>
+            <span class="audience">students, postdocs, trainees</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://chicagoquantum.org/events/chicago-quantum-summit-landing-page" target="_blank" rel="noopener noreferrer">Chicago Quantum Summit</a></strong>
+            <span>TBD</span>
+            <span class="audience">ecosystem leaders, academia, startups</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://sc26.supercomputing.org" target="_blank" rel="noopener noreferrer">Super Compute 26</a></strong>
+            <span>November 15–20</span>
+            <span class="audience">HPC professionals, tech leaders, quantum companies</span>
+          </div>
+          <div class="card event-row">
+            <strong><a href="https://q2b.qcware.com" target="_blank" rel="noopener noreferrer">Q2B</a></strong>
+            <span>December 8–10</span>
+            <span class="audience">researchers, industry professionals, startups</span>
           </div>
         </div>
         <div class="card card-wide">
