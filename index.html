@@ -111,7 +111,7 @@
       .logo-absolute {
         position: absolute;
         top: 8px;
-        right: calc((100% - min(1100px, 100%)) / 2 - 60px);
+        right: max(16px, calc((100% - 1100px) / 2));
         margin: 0;
         padding: 0;
         z-index: 2;
@@ -348,9 +348,10 @@
       @media (max-width: 899px) {
         .logo-absolute {
           position: static;
-          margin: 0 auto 12px;
-          width: 96vw;
-          max-width: 100%;
+          display: block;
+          margin: 0 auto 16px;
+          width: auto;
+          max-width: min(420px, 90vw);
         }
 
         .grid.ecosystem {
@@ -363,6 +364,48 @@
 
         #events .grid.two {
           grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .wrap {
+          padding: 0 16px;
+        }
+
+        main {
+          padding: 24px 0 48px;
+        }
+
+        section {
+          padding: 20px 0;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        .cta {
+          padding: 24px 20px;
+        }
+
+        .logo-grid img {
+          height: 36px;
+          max-width: 110px;
+        }
+
+        .logo-grid img.logo-zoom {
+          height: 52px;
+          max-width: 160px;
+        }
+
+        .logo-grid img.logo-zoom-sm {
+          height: 42px;
+          max-width: 130px;
+        }
+
+        .logo-grid img.logo-zoom-lg {
+          height: 64px;
+          max-width: 200px;
         }
       }
 
