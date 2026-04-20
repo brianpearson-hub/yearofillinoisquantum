@@ -1,0 +1,190 @@
+# Year of Illinois Quantum
+
+> A community-led narrative for 2026 to align, amplify, and celebrate Illinois' quantum momentum. 2026 marks 100 years of modern quantum mechanics; Illinois leads the next 100.
+
+## Overview
+
+2026 is shaping up to be a defining year for quantum in Illinois. Global attention is growing, driven by technological advances, investment, major conferences, and international companies establishing a presence in the region. That momentum creates a unique opportunity to build on Illinois' quantum community.
+
+Across research, startups, enterprise adoption, workforce development, and global convening, an unprecedented concentration of quantum activity is taking place in the state. The Year of Illinois Quantum is a community-led narrative designed to align, amplify, and celebrate this momentum under a shared banner.
+
+This is not a new organization, conference, or governing body. It is a unifying story that reflects what is already happening and gives the ecosystem a common language to tell it together.
+
+Framing: **2026: 100 Years of Modern Quantum Mechanics → Illinois Leads the Next 100**
+
+## Why Illinois
+
+Illinois has quietly become one of the most complete quantum ecosystems in the world. The state brings together:
+
+- World-class research institutions and national labs
+- Investment and infrastructure, including dedicated quantum facilities
+- An expanding quantum startup ecosystem
+- Global quantum company presence
+- Enterprise and cloud provider engagement
+- Major international conferences hosted in the region
+
+## Purpose
+
+The Year of Illinois Quantum exists to:
+
+- Align the ecosystem around a shared narrative
+- Increase global visibility for Illinois-based quantum work
+- Perpetuate the International Year of Quantum
+- Connect industry, academia, government, and investors
+- Attract talent, capital, and partnerships to the region
+- Create continuity across conferences and initiatives
+
+## Ecosystem Participants and Stakeholders
+
+The Year of Illinois Quantum is shaped by participation across the full ecosystem, including but not limited to the following groups.
+
+### Ecosystem and convening anchors
+
+- Chicago Quantum Exchange (https://chicagoquantum.org)
+- Polsky Center (https://polsky.uchicago.edu)
+- P33 (https://p33chicago.com)
+- Illinois EDC (https://www.illinoisedc.org)
+- Illinois Quantum and Microelectronics Park / IQMP (https://iqmp.org)
+- mHUB (https://mhubchicago.com)
+
+### Academic institutions
+
+- University of Chicago
+- Northwestern University
+- Argonne National Laboratory
+- Fermi National Accelerator Laboratory
+- University of Illinois Urbana-Champaign
+- Purdue University
+- University of Wisconsin-Madison
+- Illinois Universities system
+- Purdue Northwest
+- Chicago State University
+- City Colleges of Chicago
+- Harper College
+- University of Illinois Chicago
+- Chicago-area high schools
+
+### Industry and enterprise partners
+
+- Cloud and infrastructure providers
+- Enterprise end users exploring quantum pilots and adoption
+- Consulting and systems integration partners
+- Corporate innovation and venture teams
+
+### Public sector and workforce
+
+- Illinois Governor's Office
+- State economic development organizations
+- Workforce training and education programs
+- Community and student-focused initiatives
+
+### Startups and builders
+
+- Illinois-founded quantum startups
+- Quantum software, hardware, and systems companies expanding into Illinois
+- Early-stage teams relocating or establishing a presence in the region
+
+### Featured participating organizations
+
+Chicago Quantum Exchange, Polsky Center, P33, mHUB, Illinois EDC, Argonne National Laboratory, IQMP, qBraid, memQ, University of Chicago, Fermi National Accelerator Laboratory, Northwestern University, University of Illinois Urbana-Champaign, University of Illinois Chicago, Chicago State University, City Colleges of Chicago, Harper College, Quantum Corridor, Diraq, IBM, Pasqal, Quantum Machines, Bluefors, PsiQuantum, IonQ, Infleqtion, EeroQ, PhotonQueue, staC12, K1 Semiconductor, QuantCAD, Great Lakes Crystal Technologies.
+
+## 2026 Anchor Events in Illinois
+
+Events listed chronologically with intended audiences.
+
+- **World Quantum Day** (April 14): general public, enthusiasts, educators. https://worldquantumday.org
+- **Quantum Across Illinois** (April 14 to May 1): students, educators, quantum professionals, Illinois talent. https://chicagoquantum.org/education-and-training/quantum-across-illinois
+- **Northwestern University Quantum Week** (April 20 to 24): academia, students, researchers. https://quantum.northwestern.edu/events/northwestern-quantum-week/
+- **TechChicago Week** (July 20 to 26): tech enthusiasts, VCs, founders. https://gotechchicago.com/week
+- **Global Quantum Forum** (July 22 to 23): ecosystem leaders, public sector, enterprises. https://globalaffairs.org/global-quantum-forum
+- **Adaptive Quantum Circuits** (October 26 to 28): academics, researchers, engineers. https://www.adaptivequantumcircuits.com
+- **Super Compute 26** (November 15 to 20): HPC professionals, tech leaders, quantum companies. https://sc26.supercomputing.org
+- **Quantum Developer Day** (December 7, tentative): developers, researchers, enterprise technologists. https://quantumdeveloperday.com
+- **Chicago Quantum Recruiting Forum / ChiQHack** (December 7): students, postdocs, trainees. https://chicagoquantum.org/event/2025-chicago-quantum-recruiting-forum
+- **Q2B26 x Chicago Quantum Summit** (December 8 to 10): ecosystem leaders, academia, startups, researchers, industry professionals. https://chicagoquantum.org/news/qc-ware-cqe-co-host-q2b-x-chicago-quantum-summit-underscoring-growing-strength-quantum-prairie
+
+The Chicago Quantum Exchange maintains the full regional calendar at https://chicagoquantum.org/upcoming-events.
+
+## Proposed Events and Workshops
+
+### Year of Illinois Quantum Kickoff
+
+- Timing: aligned with Global Quantum Forum (July 2026)
+- Format: half-day or evening program with keynote remarks, lightning talks, and a networking reception
+- Objectives: set the shared narrative and goals for the year, highlight existing initiatives, connect cross-sector leaders, announce the full 2026 event calendar
+- Potential venue: Radisson Blu Aqua Chicago
+- Expected feature: Governor's announcement of the Year of Illinois Quantum
+
+### CQE Workshop Proposals
+
+- Funding: $1,500 plus matching per workshop
+- Due date: rolling submissions
+- Priority themes: bridging multiple institutions and sectors, lively cross-sector exchange, relevance to academia, national labs, and industry
+- Submit a proposal: https://form.jotform.com/250435685362056
+- Contact: quantum@uchicago.edu
+
+### Quantum Qruise
+
+- Timing: coincides with TechChicago Week
+- Format: boat cruise for 100+ quantum leaders across startups, academia, public sector, economic development, and enterprise partners
+- Objectives: connect Illinois founders, researchers, and industry leaders; strengthen collaboration across the tech and startup community; showcase Illinois quantum momentum
+
+### Year of Illinois Quantum Networking Event
+
+- Timing: coincides with Q2B26 x Chicago Quantum Summit in December
+- Format: networking reception at Q2B26 x Chicago Quantum Summit
+- Objectives: introduce global partners to Illinois research, startups, and industry; feature a guest speaker from IQMP or a local organization; excite guests about moving quantum operations to Illinois
+
+### ChiQHack
+
+- Timing: December, aligned with Chicago Quantum Recruiting Forum
+- Format: in-person, all-day hackathon on a university campus
+- Objectives: provide a hands-on quantum challenge for university students; facilitate networking between students and prospective employers; align with the Recruiting Forum to connect talent with opportunities
+
+### Quantum Qoffee's
+
+- Cadence: monthly, March to December 2026
+- Objectives: open networking, one short spotlight talk or fireside chat, optional lightning updates
+- Hosts: rotating universities, innovation hubs, and partner spaces, with conference-adjacent sessions when stakeholders are in town
+
+### Year of Illinois Quantum Closing Event
+
+- Timing: July 2027
+- Format: evening reception or half-day forum, aligned with Global Quantum Forum 2027
+- Objectives: celebrate community achievements and collaborations; highlight research, pilots, and commercial progress; capture lessons learned and ecosystem growth
+
+### Proposing an event
+
+Community-led ideas are welcome. To propose a workshop, meetup, or community program, contact brian.pearson@qbraid.com.
+
+## How Partners Participate
+
+Partner organizations can:
+
+- Amplify the Year of Illinois Quantum with the social press kit
+- Use #YearofIllinoisQuantum or #YIQ on social posts
+- Co-brand select slides, programs, or side events
+- Cross-promote through newsletters and social channels
+- Sponsor meetups, dinners, or ecosystem gatherings
+- Collaborate on workforce, pilot, or research initiatives
+
+## Call to Action
+
+If you are building, researching, investing, teaching, or deploying quantum technologies in or with Illinois, you are invited to participate in shaping the Year of Illinois Quantum. The goal is to align the story, amplify the work, and show the world what is happening in Illinois together.
+
+## Key URLs
+
+- Home: https://www.yearofquantum.org
+- Chicago Quantum Exchange: https://chicagoquantum.org
+- IQMP: https://iqmp.org
+- Global Quantum Forum: https://globalaffairs.org/global-quantum-forum
+- qBraid (supporting organization): https://qbraid.com
+- Sister site (Quantum Hackathons): https://www.quantumhackathons.com
+
+## Contact
+
+Brian Pearson
+Head of Business Development, qBraid
+brian.pearson@qbraid.com
+
+© 2026 Year of Illinois Quantum
