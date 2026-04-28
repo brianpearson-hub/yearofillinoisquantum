@@ -257,6 +257,74 @@
         margin-top: 16px;
       }
 
+      #anchor-events .event-row {
+        position: relative;
+        transition: opacity 200ms ease, filter 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+      }
+
+      .event-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 3px 10px;
+        border-radius: 999px;
+        width: fit-content;
+        margin-bottom: 2px;
+      }
+
+      .event-status::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: currentColor;
+      }
+
+      .event-status.past {
+        background: rgba(91, 100, 115, 0.12);
+        color: var(--muted);
+      }
+
+      .event-status.now {
+        background: rgba(134, 197, 244, 0.4);
+        color: #0c3a7a;
+      }
+
+      .event-status.upcoming {
+        background: rgba(29, 79, 163, 0.1);
+        color: var(--blue);
+      }
+
+      #anchor-events .event-row.is-past {
+        opacity: 0.5;
+        filter: grayscale(0.6);
+      }
+
+      #anchor-events .event-row.is-past:hover {
+        opacity: 0.85;
+        filter: grayscale(0);
+      }
+
+      #anchor-events .event-row.is-past strong a {
+        color: var(--muted);
+      }
+
+      #anchor-events .event-row.is-now {
+        border-color: rgba(134, 197, 244, 0.7);
+        background: linear-gradient(180deg, rgba(134, 197, 244, 0.08), rgba(134, 197, 244, 0));
+        box-shadow: 0 6px 18px rgba(29, 79, 163, 0.08);
+      }
+
+      #anchor-events .event-row.is-next {
+        border-color: rgba(29, 79, 163, 0.3);
+        box-shadow: 0 4px 14px rgba(29, 79, 163, 0.08);
+      }
+
       .list {
         margin: 0;
         padding-left: 18px;
@@ -997,52 +1065,52 @@
           Events listed chronologically with intended audiences.
         </p>
         <div class="event-list">
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-04-14" data-event-end="2026-04-14">
             <strong><a href="https://worldquantumday.org" target="_blank" rel="noopener noreferrer">World Quantum Day</a></strong>
             <span>April 14</span>
             <span class="audience">general public, enthusiasts, educators</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-04-14" data-event-end="2026-05-01">
             <strong><a href="https://chicagoquantum.org/education-and-training/quantum-across-illinois" target="_blank" rel="noopener noreferrer">Quantum Across Illinois</a></strong>
             <span>April 14 – May 1</span>
             <span class="audience">students, educators, quantum professionals, Illinois talent</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-04-20" data-event-end="2026-04-24">
             <strong><a href="https://quantum.northwestern.edu/events/northwestern-quantum-week/" target="_blank" rel="noopener noreferrer">Northwestern University Quantum Week</a></strong>
             <span>April 20–24</span>
             <span class="audience">academia, students, researchers</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-07-20" data-event-end="2026-07-26">
             <strong><a href="https://gotechchicago.com/week" target="_blank" rel="noopener noreferrer">TechChicago Week</a></strong>
             <span>July 20–26</span>
             <span class="audience">tech enthusiasts, VCs, founders</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-07-22" data-event-end="2026-07-23">
             <strong><a href="https://globalaffairs.org/global-quantum-forum" target="_blank" rel="noopener noreferrer">Global Quantum Forum</a></strong>
             <span>July 22–23</span>
             <span class="audience">ecosystem leaders, public sector, enterprises</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-10-26" data-event-end="2026-10-28">
             <strong><a href="https://www.adaptivequantumcircuits.com" target="_blank" rel="noopener noreferrer">Adaptive Quantum Circuits</a></strong>
             <span>October 26–28</span>
             <span class="audience">academics, researchers, engineers</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-11-15" data-event-end="2026-11-20">
             <strong><a href="https://sc26.supercomputing.org" target="_blank" rel="noopener noreferrer">Super Compute 26</a></strong>
             <span>November 15–20</span>
             <span class="audience">HPC professionals, tech leaders, quantum companies</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-12-07" data-event-end="2026-12-07">
             <strong><a href="https://quantumdeveloperday.com" target="_blank" rel="noopener noreferrer">Quantum Developer Day</a></strong>
             <span>December 7 (tentative)</span>
             <span class="audience">developers, researchers, enterprise technologists</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-12-07" data-event-end="2026-12-07">
             <strong><a href="https://chicagoquantum.org/event/2025-chicago-quantum-recruiting-forum" target="_blank" rel="noopener noreferrer">Chicago Quantum Recruiting Forum / ChiQHack</a></strong>
             <span>December 7</span>
             <span class="audience">students, postdocs, trainees</span>
           </div>
-          <div class="card event-row">
+          <div class="card event-row" data-event-start="2026-12-08" data-event-end="2026-12-10">
             <strong><a href="https://chicagoquantum.org/news/qc-ware-cqe-co-host-q2b-x-chicago-quantum-summit-underscoring-growing-strength-quantum-prairie" target="_blank" rel="noopener noreferrer">Q2B26 x Chicago Quantum Summit</a></strong>
             <span>December 8–10</span>
             <span class="audience">ecosystem leaders, academia, startups, researchers, industry professionals</span>
@@ -1249,5 +1317,41 @@
         <p>&copy; 2026 Year of Illinois Quantum</p>
       </div>
     </footer>
+    <script>
+      (function () {
+        var today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        var rows = document.querySelectorAll('#anchor-events .event-row[data-event-start]');
+        var firstUpcoming = null;
+
+        rows.forEach(function (el) {
+          var start = new Date(el.dataset.eventStart + 'T00:00:00');
+          var end = new Date((el.dataset.eventEnd || el.dataset.eventStart) + 'T23:59:59');
+
+          var pill = document.createElement('span');
+          pill.className = 'event-status';
+
+          if (today > end) {
+            el.classList.add('is-past');
+            pill.classList.add('past');
+            pill.textContent = 'Completed';
+          } else if (today >= start && today <= end) {
+            el.classList.add('is-now');
+            pill.classList.add('now');
+            pill.textContent = 'Happening now';
+          } else {
+            el.classList.add('is-upcoming');
+            pill.classList.add('upcoming');
+            pill.textContent = 'Upcoming';
+            if (!firstUpcoming) firstUpcoming = el;
+          }
+
+          el.insertBefore(pill, el.firstChild);
+        });
+
+        if (firstUpcoming) firstUpcoming.classList.add('is-next');
+      })();
+    </script>
   </body>
 </html>
